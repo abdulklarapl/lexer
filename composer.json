@@ -1,0 +1,22 @@
+{
+    "name": "abdulklarapl/lexer",
+    "description": "Library running lexical analysis for input",
+    "keywords": ["lexer", "lexical", "analysis", "abdulklarapl"],
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Patryk Szlagowski",
+            "email": "szlagowskipatryk@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0"
+    },
+    "autoload": {
+        "psr-0": {
+            "Abdulklarapl\\Tests": "tests/",
+            "Abdulklarapl": "src/"
+        }
+    }
+}
