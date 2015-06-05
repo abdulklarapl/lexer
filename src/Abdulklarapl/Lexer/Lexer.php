@@ -105,4 +105,12 @@ class Lexer
     {
         return $this->stream;
     }
+
+    /**
+     * @return Token[]
+     */
+    public function getPreviousTokens()
+    {
+        return $this->token;
+    }
 }

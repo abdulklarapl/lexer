@@ -30,11 +30,11 @@ class SpecialCharParser implements ParserInterface
     }
 
     /**
+     * @param Lexer $lexer
      * @param string $token
-     *
-     * @return boolean
+     * @return bool|mixed
      */
-    public function match($token)
+    public function match(Lexer &$lexer, $token)
     {
         return preg_match(self::REGEX, $token) > 0;
     }

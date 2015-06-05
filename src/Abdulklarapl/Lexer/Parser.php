@@ -27,7 +27,7 @@ class Parser implements ParserInterface
     {
         foreach ($this->parser as $parser)
         {
-            if ($parser->match($token)) {
+            if ($parser->match($lexer, $token)) {
                 return $parser->parse($lexer, $token);
             }
         }

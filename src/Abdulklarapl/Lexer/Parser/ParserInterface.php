@@ -10,18 +10,18 @@ use Abdulklarapl\Lexer\Lexer;
 interface ParserInterface
 {
     /**
-     * @param string $stream
-     * @return null
+     * @param Lexer $lexer
+     * @param string $token
+     * @return mixed
      */
     public function parse(Lexer &$lexer ,$token);
 
     /**
-     * return true if token is matched to pattern
+     * @param Lexer $lexer
      * @param string $token
-     *
-     * @return boolean
+     * @return mixed
      */
-    public function match($token);
+    public function match(Lexer &$lexer, $token);
 
     /**
      * return name/id of parser
